@@ -3,7 +3,7 @@ module.exports = ({ env }) => ({
         config: {
             provider: 'sendgrid',
             providerOptions: {
-                apiKey: "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",
+                apiKey: env('SENDGRID_API_KEY'),
             },
             settings: {
                 defaultFrom: 'support@rarecamion.com',
