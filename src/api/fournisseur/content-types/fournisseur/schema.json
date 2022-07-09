@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fournisseurs",
+  "info": {
+    "singularName": "fournisseur",
+    "pluralName": "fournisseurs",
+    "displayName": "Fournisseur",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomFournisseur": {
+      "type": "string"
+    },
+    "detailsFournisseur": {
+      "type": "string",
+      "default": "RAS"
+    }
+  }
+}

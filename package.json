@@ -1,0 +1,33 @@
+{
+  "name": "rarecamion",
+  "private": true,
+  "version": "1.22.17",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@strapi/plugin-documentation": "4.2.2",
+    "@strapi/plugin-i18n": "4.2.2",
+    "@strapi/plugin-users-permissions": "4.2.2",
+    "@strapi/provider-email-sendgrid": "^4.2.2",
+    "@strapi/strapi": "4.2.2",
+    "mysql": "2.18.1",
+    "uuid": "^8.3.2"
+  },
+  "author": {
+    "name": "Jacques GOUDE"
+  },
+  "strapi": {
+    "uuid": "01bb8ad7-b5bc-4d5a-80cf-ac1d35dde538"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "packageManager": "yarn@3.2.0"
+}

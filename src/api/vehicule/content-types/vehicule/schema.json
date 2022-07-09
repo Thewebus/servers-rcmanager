@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vehicules",
+  "info": {
+    "singularName": "vehicule",
+    "pluralName": "vehicules",
+    "displayName": "Vehicule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "matricule": {
+      "type": "string"
+    },
+    "typeProduit": {
+      "type": "string"
+    },
+    "etatProduit": {
+      "type": "string"
+    },
+    "dechargement": {
+      "type": "string"
+    },
+    "usineVehicule": {
+      "type": "string"
+    },
+    "photoVehicule": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "photoProduit": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "vehicules"
+    },
+    "status_vehicules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::status-vehicule.status-vehicule",
+      "mappedBy": "vehicule_related"
+    },
+    "statusEdition": {
+      "type": "enumeration",
+      "enum": [
+        "edition",
+        "closed"
+      ],
+      "default": "edition"
+    },
+    "fournisseur": {
+      "type": "string"
+    }
+  }
+}

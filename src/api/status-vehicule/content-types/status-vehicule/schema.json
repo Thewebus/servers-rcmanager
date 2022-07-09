@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "status_vehicules",
+  "info": {
+    "singularName": "status-vehicule",
+    "pluralName": "status-vehicules",
+    "displayName": "Status Vehicule",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "libelleStatus": {
+      "type": "string"
+    },
+    "observationStatus": {
+      "type": "text"
+    },
+    "vehicule_related": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::vehicule.vehicule",
+      "inversedBy": "status_vehicules"
+    },
+    "statusEdition": {
+      "type": "enumeration",
+      "enum": [
+        "edition",
+        "closed"
+      ],
+      "default": "edition"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ]
+    }
+  }
+}
