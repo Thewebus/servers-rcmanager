@@ -8,7 +8,6 @@ module.exports = ({ env }) => ({
             settings: {
                 defaultFrom: 'support@rarecamion.com',
                 defaultReplyTo: 'support@rarecamion.com',
-		testAddress: 'developers.rarecamion.com',
             },
         },
     },
